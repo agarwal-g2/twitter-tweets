@@ -11,9 +11,6 @@ class TwitterController extends Controller
 {
     public function index(Request $request){
 
-        /*I have not check auth because as I have discussed about the facebook login system,
-        So this functionality should work independent of login system*/
-
         //show the tweet searchbox form
         if(!$request->isMethod('POST')){
             return view('twitter.index');
